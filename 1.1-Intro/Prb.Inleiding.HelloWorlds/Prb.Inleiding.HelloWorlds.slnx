@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Prb.Inleiding.HelloWorlds.cons/Prb.Inleiding.HelloWorlds.cons.csproj" />
+  <Project Path="Prb.Inleiding.HelloWorlds.Web/Prb.Inleiding.HelloWorlds.Web.csproj" />
+  <Project Path="Prb.Inleiding.HelloWorlds.Wpf/Prb.Inleiding.HelloWorlds.Wpf.csproj" />
+</Solution>

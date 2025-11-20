@@ -1,0 +1,29 @@
+## Visual Studio
+.vs/
+*.user
+*.suo
+
+## Build resultaat
+bin/
+obj/
+
+## NuGet
+packages/
+*.nupkg
+project.lock.json
+
+## ASP.NET
+wwwroot/lib/
+wwwroot/node_modules/
+
+## Logs
+*.log
+
+## Caches
+*.cache
+
+## Database files (SQLite e.d.)
+*.db
+
+## Config (lokale ontwikkelinstellingen)
+appsettings.Development.json
