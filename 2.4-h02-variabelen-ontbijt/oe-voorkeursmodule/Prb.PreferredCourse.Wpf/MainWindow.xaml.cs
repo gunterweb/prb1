@@ -20,9 +20,47 @@ namespace Prb.PreferredCourse.Wpf
     /// </summary>
     public partial class MainWindow : Window
     {
+        string name;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            btnOK.Visibility = Visibility.Hidden;
+            lstPreference.IsEnabled = false;
+
+            lstPreference.Items.Add("PRB");
+            lstPreference.Items.Add("WFB");
+            lstPreference.Items.Add("CIB");
+        }
+
+        private void TxtName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (txtName.Text.Length == 0)
+            {
+                btnOK.Visibility = Visibility.Hidden;
+            }
+            else 
+            {
+                btnOK.Visibility = Visibility.Visible;
+
+            }
+            
+        }
+
+        private void BtnOK_Click(object sender, RoutedEventArgs e)
+        {
+            name = txtName.Text;
+                lblWelcome.Content = $"Welkom in Howest, {name}";
+            lstPreference.IsEnabled = true;
+        }
+
+        private void LstPreference_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string preferredCourse = lstPreference.SelectedItem.ToString();
+            tbkFeedBack.Text = $"{name}, je voorkeur gaat uit naar {preferredCourse}";
         }
     }
 }
