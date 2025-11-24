@@ -30,6 +30,7 @@ namespace Prb.Variables.Conversion.Wpf
         private void btnProcessOrder_Click(object sender, RoutedEventArgs e)
         {
             //declareer hier je variabelen, en converteer de .Text waarden uit de Textboxes naar een passend type
+            //consider it "done"
 
             decimal liters = decimal.Parse(txtLitersToBuy.Text);
             decimal pricePerLiter = decimal.Parse(txtPricePerLiter.Text);

@@ -8,7 +8,7 @@ Price / L: de prijs per liter, mogelijks een kommagetal
 Persons: hoeveel personen er samen inkopen
 Consent: bevat gewoon de tekst "true" 
 
-Wanneer de gebruiker op de knop dient het volgende te gebeuren:
+Wanneer de gebruiker op de knop klikt dient het volgende te gebeuren:
 - De prijs zonder BTW (no VAT) wordt berekend en weergegeven
 - De BTW (VAT) wordt berekend en weergegeven
 - Prijs inclusief BTW wordt berekend en weergegeven
