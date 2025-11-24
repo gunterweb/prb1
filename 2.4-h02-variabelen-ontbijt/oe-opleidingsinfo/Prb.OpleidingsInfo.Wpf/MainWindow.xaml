@@ -13,15 +13,15 @@
         <Label Content="Aantal studenten" HorizontalAlignment="Left" Margin="10,122,0,0" VerticalAlignment="Top"/>
         <Label Content="Gemiddelde leeftijd" HorizontalAlignment="Left" Margin="10,148,0,0" VerticalAlignment="Top"/>
         <Label Content="Totaal aantal cellen" HorizontalAlignment="Left" Margin="10,176,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="141,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="141,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="141,96,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="141,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="141,179,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <ComboBox HorizontalAlignment="Left" Margin="141,124,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Info opleiding" HorizontalAlignment="Left" Margin="319,40,0,0" VerticalAlignment="Top" Width="101" Height="23" />
-        <Button Content="Info studenten" HorizontalAlignment="Left" Margin="319,68,0,0" VerticalAlignment="Top" Width="101" Height="23" />
-        <TextBlock HorizontalAlignment="Left" Margin="462,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="283" Width="237" Background="#FFFFFFDF"/>
+        <TextBox x:Name="txtOpleiding" HorizontalAlignment="Left" Height="23" Margin="141,40,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtKostOpleiding" HorizontalAlignment="Left" Height="23" Margin="141,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtGemeente" HorizontalAlignment="Left" Height="23" Margin="141,96,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtGemLeeftijd" HorizontalAlignment="Left" Height="23" Margin="141,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAantalCellen" HorizontalAlignment="Left" Height="23" Margin="141,179,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cmbAantalStudenten" HorizontalAlignment="Left" Margin="141,124,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnInfoOpleiding" Content="Info opleiding" HorizontalAlignment="Left" Margin="319,40,0,0" VerticalAlignment="Top" Width="101" Height="23" />
+        <Button x:Name="btnInfoStudenten" Content="Info studenten" HorizontalAlignment="Left" Margin="319,68,0,0" VerticalAlignment="Top" Width="101" Height="23" />
+        <TextBlock x:Name="tbkToonInfo" HorizontalAlignment="Left" Margin="462,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="283" Width="237" Background="#FFFFFFDF"/>
 
     </Grid>
 </Window>
