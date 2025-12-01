@@ -1,0 +1,24 @@
+﻿<Window x:Class="Prb.Variables.Types.wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prb.Variables.Types.wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lblLatitude" Content="Location (Latitude)" HorizontalAlignment="Left" Margin="51,42,0,0" VerticalAlignment="Top" Width="180"/>
+        <Label x:Name="lblLongitude" Content="Location (Longitude)" HorizontalAlignment="Left" Margin="51,73,0,0" VerticalAlignment="Top" Width="180"/>
+        <CheckBox x:Name="ckbHasCafetaria" Content="Has Cafetaria" HorizontalAlignment="Left" Margin="310,132,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblLunchCosts" Content="Lunch Costs" HorizontalAlignment="Left" Margin="59,175,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblRooms" Content="Rooms" HorizontalAlignment="Left" Margin="59,206,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblStudents" Content="Students" HorizontalAlignment="Left" Margin="59,237,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtLatitude" HorizontalAlignment="Left" Margin="310,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtLongitude" HorizontalAlignment="Left" Margin="310,77,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtLunchCosts" HorizontalAlignment="Left" Margin="310,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtRooms" HorizontalAlignment="Left" Margin="310,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtStudents" HorizontalAlignment="Left" Margin="310,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnShowValues" Content="Show Values" HorizontalAlignment="Left" Margin="315,287,0,0" VerticalAlignment="Top" Click="btnShowValues_Click"/>
+
+    </Grid>
+</Window>

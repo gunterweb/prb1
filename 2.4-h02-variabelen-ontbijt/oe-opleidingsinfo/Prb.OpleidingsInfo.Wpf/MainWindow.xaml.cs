@@ -24,5 +24,10 @@ namespace Prb.OpleidingsInfo.Wpf
         {
             InitializeComponent();
         }
+
+        private void TxtKostOpleiding_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
