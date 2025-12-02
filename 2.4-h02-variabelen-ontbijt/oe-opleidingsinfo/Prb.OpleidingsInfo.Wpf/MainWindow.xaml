@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Prb.OpleidingsInfo.Wpf"
         mc:Ignorable="d"
-        Title="Info over een opleiding" Height="382" Width="733">
+        Title="Info over een opleiding" Height="382" Width="733" Loaded="Window_Loaded">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="669*"/>
+            <ColumnDefinition Width="64*"/>
+        </Grid.ColumnDefinitions>
         <Label Content="Opleiding" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top"/>
         <Label Content="Kost opleiding" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top"/>
         <Label Content="Gemeente" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top"/>
@@ -19,9 +23,9 @@
         <TextBox x:Name="txtGemLeeftijd" HorizontalAlignment="Left" Height="23" Margin="141,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="txtAantalCellen" HorizontalAlignment="Left" Height="23" Margin="141,179,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="cmbAantalStudenten" HorizontalAlignment="Left" Margin="141,124,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnInfoOpleiding" Content="Info opleiding" HorizontalAlignment="Left" Margin="319,40,0,0" VerticalAlignment="Top" Width="101" Height="23" />
-        <Button x:Name="btnInfoStudenten" Content="Info studenten" HorizontalAlignment="Left" Margin="319,68,0,0" VerticalAlignment="Top" Width="101" Height="23" />
-        <TextBlock x:Name="tbkToonInfo" HorizontalAlignment="Left" Margin="462,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="283" Width="237" Background="#FFFFFFDF"/>
+        <Button x:Name="btnInfoOpleiding" Content="Info opleiding" HorizontalAlignment="Left" Margin="319,40,0,0" VerticalAlignment="Top" Width="101" Height="23" Click="BtnInfoOpleiding_Click" />
+        <Button x:Name="btnInfoStudenten" Content="Info studenten" HorizontalAlignment="Left" Margin="319,68,0,0" VerticalAlignment="Top" Width="101" Height="23" Click="BtnInfoStudenten_Click" />
+        <TextBlock x:Name="tbkToonInfo" HorizontalAlignment="Left" Margin="462,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="283" Width="237" Background="#FFFFFFDF" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
