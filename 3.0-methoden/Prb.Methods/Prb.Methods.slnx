@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../Prb.Methods.Currency.Wpf/Prb.Methods.Currency.Wpf.csproj" />
+  <Project Path="../Prb.Methods.SumWpf/Prb.Methods.SumWpf.csproj" />
+  <Project Path="Prb.Methods.Wpf/Prb.Methods.Wpf.csproj" />
+</Solution>

@@ -1,0 +1,36 @@
+﻿<Window x:Class="Prb.BerekenInhouden.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prb.BerekenInhouden.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="439" Width="407.622" Loaded="Window_Loaded">
+    <Grid>
+        <WrapPanel HorizontalAlignment="Left" Height="30" Margin="10,46,0,0" VerticalAlignment="Top" Width="168">
+            <Button x:Name="btnBar" Content="Balk" Width="75" Click="BtnBar_Click"/>
+            <Button x:Name="btnCylinder" Content="Cilinder" Width="75" Margin="10,0,0,0" Click="BtnCylinder_Click"/>
+        </WrapPanel>
+        <Label Content="Meetkundige inhoud" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="200"/>
+        <Grid x:Name="grdBar" HorizontalAlignment="Left" Height="282" Margin="10,127,0,0" VerticalAlignment="Top" Width="182" Background="#FF24E4F2">
+            <Label Content="Grondvlak" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93"/>
+            <Label Content="Lengte" HorizontalAlignment="Left" Margin="25,41,0,0" VerticalAlignment="Top" Width="93"/>
+            <Label Content="Breedte" HorizontalAlignment="Left" Margin="25,72,0,0" VerticalAlignment="Top" Width="93"/>
+            <TextBox x:Name="txtLength" HorizontalAlignment="Left" Height="23" Margin="92,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+            <TextBox x:Name="txtWidth" HorizontalAlignment="Left" Height="23" Margin="92,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+            <Button x:Name="btnCalculateBar" Content="Bereken" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top" Width="75" Click="BtnCalculateBar_Click"/>
+            <TextBlock x:Name="tbkCalculationBar" HorizontalAlignment="Left" Margin="10,159,0,0" TextWrapping="Wrap" Text="Berekening" VerticalAlignment="Top" Height="113" Width="162" Background="#FFF9F1D4" Padding="5,5,0,5"/>
+        </Grid>
+        <Grid x:Name="grdCylinder" HorizontalAlignment="Left" Height="282" Margin="219,127,0,0" VerticalAlignment="Top" Width="182" Background="#FF24E4F2">
+            <Label Content="Grondvlak" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="93"/>
+            <Label Content="Diameter" HorizontalAlignment="Left" Margin="25,41,0,0" VerticalAlignment="Top" Width="62"/>
+            <TextBox x:Name="txtDiameter" HorizontalAlignment="Left" Height="23" Margin="92,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+            <Button x:Name="btnCalculateCylinder" Content="Bereken" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top" Width="75" Click="BtnCalculateCylinder_Click"/>
+            <TextBlock x:Name="tbkCalculationCylinder" HorizontalAlignment="Left" Margin="10,164,0,0" TextWrapping="Wrap" Text="Berekening" VerticalAlignment="Top" Height="108" Width="162" Background="#FFF9F1D4" Padding="5,5,5,5"/>
+        </Grid>
+        <Grid x:Name="grdHeight" HorizontalAlignment="Left" Height="46" Margin="10,81,0,0" VerticalAlignment="Top" Width="158">
+            <Label Content="Hoogte" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="64"/>
+            <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Height="23" Margin="74,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="65"/>
+        </Grid>
+    </Grid>
+</Window>
